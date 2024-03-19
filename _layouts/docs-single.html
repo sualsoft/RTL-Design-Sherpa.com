@@ -9,19 +9,18 @@
 
     <main id="main">
       <!-- ======= About Section ======= -->
-      <section id="article" class="article pt-5">
-        <div class="container pt-5 mt-5" data-aos="fade-up">
+      <section id="article" class="article pt-5 mt-5">
+        <div class="container pt-5" data-aos="fade-up">
           <div class="row justify-content-center">
             <div class="col-xl-9 col-lg-11 col-md-12">
               <div class="row justify-content-center list">
                 <div class="col-md-12 title text-center">
-                  <h2>Top Pickup Articles</h2>
+                  <h2>Our Articles</h2>
                 </div>
                 {% assign sorted_docs = site.docs | sort: 'date' | reverse %}
                 <!---->
                 {% for post in sorted_docs %}
                 <!---->
-                {% if post.type == 'index' %}
                 <div class="col-md-2">
                   <p>{{ post.date | date: "%d %b %Y" }}</p>
                 </div>
@@ -32,16 +31,12 @@
                 </div>
                 <div class="col-md-3">
                   {% for category in post.categories %}
-                  <a
-                    href="{{ '/categories/' | append: category | relative_url }}"
-                    class="category"
-                    >{{ category }}</a
-                  >
+                  <a class="category">{{ category }}</a>
                   {% endfor %}
                 </div>
                 <!---->
                 <hr />
-                {% endif %} {% endfor %}
+                {% endfor %}
               </div>
             </div>
           </div>
