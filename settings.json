@@ -1,0 +1,6 @@
+{
+    "grammarly.files.include": ["**/README.md", "**/readme.md", "**/index.md", "**/*.md", "**/*.txt"],
+    "plantuml.diagramsRoot": "docs/UML",
+    "plantuml.exportOutDir": "docs/images_scripts_uml"
+}
+

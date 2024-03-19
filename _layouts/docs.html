@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <!-- ======= Header ======= -->
+    {% include header.html %}
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Article Section ======= -->
+      <secction class="post pt-5">
+        <div class="container pt-5">
+          <div class="row pt-5">
+            <div class="col-lg-9">
+              <h2>{{ page.title}}</h2>
+              <hr />
+              <article>{{content}}</article>
+            </div>
+          </div>
+        </div>
+      </secction>
+      <!-- End Article Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>RTL Design Sherpa</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+
+    <!-- plugs JS Files -->
+    <script src="/assets/plugs/purecounter/purecounter.js"></script>
+    <script src="/assets/plugs/aos/aos.js"></script>
+    <script src="/assets/plugs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/plugs/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/plugs/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/plugs/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/plugs/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
